@@ -4,10 +4,61 @@
 	padding: 0;
 }
 :root {
+	background-color: hsla(0, 0%, 15%, 1);
+	color: hsla(0, 0%, 90%, 1);
+	font-family: Roboto Mono, monospace, sans-serif;
+	font-weight: 200;
 }
 main, footer {
 	width: 85%;
 	margin: 0 auto;
+}
+footer {
+	text-align: center;
+}
+section {
+	margin: 32px 0;
+}
+ul {
+	list-style: none;
+}
+h1, h2 {
+	font-weight: 700;
+}
+h1 {
+	margin-top: 32px;
+	margin-right: 16px;
+}
+h3, h4 {
+	font-weight: 500;
+}
+p {
+	letter-spacing: -0.85px;
+}
+li a {
+	padding-left: 8px;
+	color: hsla(0, 0%, 90%, 1);
+	font-weight: 600;
+	text-decoration-color: hsla(207, 86%, 57%, 1);
+	text-decoration-thickness: 3px;
+}
+.extra-logo-style {
+	background-color: hsla(48, 96%, 53%, 1);
+	color: hsla(215, 28%, 17%, 1);
+	font-size: 1rem;
+	padding: 4px 8px;
+}
+.github-text-style:before {
+	content: "the GitHub repository";
+}
+.showcase-project-container .red {
+	background-color: hsl(11, 80%, 60%);
+}
+.showcase-project-container .orange {
+	background-color: hsl(36, 80%, 60%);
+}
+.showcase-project-container .green {
+	background-color: hsl(116, 80%, 60%);
 }
 .showcase-project-container {
 	border: 2px solid gray;
@@ -19,26 +70,24 @@ main, footer {
 	height: 15px;
 	width: 15px;
 }
-.showcase-project-container .red {
-	background-color: hsl(11, 80%, 60%);
-}
-.showcase-project-container .orange {
-	background-color: hsl(36, 80%, 60%);
-}
-.showcase-project-container .green {
-	background-color: hsl(116, 80%, 60%);
-}
-@media (min-width:  768px) {
+@media (min-width: 950px) {
 	h1 {
 		font-size: 3rem;
+		display: inline-block;
 	}
 	h2 {
 		font-size: 2rem;
 	}
 	h3, h4 {
-		font-size: 1.7rem;
+		font-size: 1.688rem;
 	}
 	p {
-		font-size: 1.5rem;
+		font-size: 1.313rem;
+	}
+	li {
+		font-size: 1rem;
+	}
+	.extra-logo-style {
+		font-size: 1.313rem;
 	}
 }
