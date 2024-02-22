@@ -1,124 +1,140 @@
 * {
-	border: 0;
-	margin: 0;
-	padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 :root {
-	--page-background-color: hsla(0, 0%, 15%, 1);
-	--text-color: hsla(0, 0%, 90%, 1);
-	--secondary-text-color: hsla(215, 28%, 17%, 1);
-	--text-background-color: hsla(48, 96%, 53%, 1);
-	--link-text-underline-color: hsla(207, 86%, 57%, 1);
-	font-family: Roboto Mono, monospace, sans-serif;
-	font-weight: 200;
-	font-size: 16px;
+  --page-background-color: hsla(0, 0%, 15%, 1);
+  --text-color: hsla(0, 0%, 90%, 1);
+  --secondary-text-color: hsla(215, 28%, 17%, 1);
+  --text-background-color: hsla(48, 96%, 53%, 1);
+  --link-text-underline-color: hsla(207, 86%, 57%, 1);
+  font-family:
+    Roboto Mono,
+    monospace,
+    sans-serif;
+  font-weight: 200;
+  font-size: 16px;
 }
 html {
-	background-color: var(--page-background-color);
-	color: var(--text-color);
+  background-color: var(--page-background-color);
+  color: var(--text-color);
 }
-header, main, footer {
-	width: 70%;
-	margin: 0 auto;
+header,
+main,
+footer {
+  width: 70%;
+  margin: 0 auto;
 }
 section {
-	margin: 148px 0;
-	padding: 32px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 148px 0;
 }
 footer {
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 footer h4 {
-	background-color: var(--text-background-color);
-	color: var(--secondary-text-color);
-	padding: 4px 8px;
-	width: fit-content;
-	margin: 0 auto;
+  background-color: var(--text-background-color);
+  color: var(--secondary-text-color);
+  padding: 4px 8px;
+  width: fit-content;
+  margin: 0 auto;
 }
 img {
-	width: 100%;
-	float: right;
-	padding-left: 32px;
-	padding-bottom: 32px;
+  width: 100%;
+  float: right;
+  padding-left: 32px;
+  padding-bottom: 32px;
 }
 ul {
-	list-style: none;
+  list-style: none;
 }
-h1, h2 {
-	font-weight: 700;
+h1,
+h2 {
+  font-weight: 700;
 }
-h3, h4 {
-	font-weight: 500;
+h3,
+h4 {
+  font-weight: 500;
 }
 h1 {
-	margin-top: 48px;
-	margin-right: 16px;
+  margin-top: 48px;
+  margin-right: 16px;
 }
-h2, h3, ul, ul li {
-	margin-bottom: 16px;
+h2,
+h3,
+ul,
+ul li {
+  margin-bottom: 16px;
 }
 p {
-	letter-spacing: -0.85px;
-	margin-bottom: 16px;
+  letter-spacing: -0.85px;
+  margin-bottom: 16px;
 }
 li a {
-	padding-left: 8px;
-	color: var(--text-color);
-	font-weight: 600;
-	text-decoration-color: var(--link-text-underline-color);
-	text-decoration-thickness: 3px;
+  padding-left: 8px;
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration-color: var(--link-text-underline-color);
+  text-decoration-thickness: 3px;
 }
 li a:hover {
-	background-color: var(--text-background-color);
-	color: var(--secondary-text-color);
-	text-decoration: none;
-	padding: 2px;
+  background-color: var(--text-background-color);
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  padding: 2px;
 }
 li a:active {
-	background-color: var(--page-background-color);
-	color: var(--text-color);
+  background-color: var(--page-background-color);
+  color: var(--text-color);
 }
 .extra-logo-style {
-	background-color: var(--text-background-color);
-	color: var(--secondary-text-color);
-	font-size: 1rem;
-	padding: 4px 8px;
+  background-color: var(--text-background-color);
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+  padding: 4px 8px;
 }
 .pages-list-style {
-	border: solid 2px var(--text-color);
-	padding-top: 12px;
-	padding-left: 8px;
-	padding-right: 8px;
-	width: fit-content;
+  border: solid 2px var(--text-color);
+  padding-top: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: fit-content;
 }
 .github-text-style:before {
-	content: "the GitHub repository";
+  content: "the GitHub repository";
 }
 .live-site-text-style:before {
-	content: "the live site";
+  content: "the live site";
+}
+.card {
+  padding: 32px;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 @media only screen and (min-width: 950px) {
-	img {
-		width: 50%;
-	}
-	h1 {
-		font-size: 3rem;
-		display: inline-block;
-	}
-	h2 {
-		font-size: 2rem;
-	}
-	h3, h4 {
-		font-size: 1.688rem;
-	}
-	p {
-		font-size: 1.313rem;
-	}
-	li {
-		font-size: 1rem;
-	}
-	.extra-logo-style {
-		font-size: 1.313rem;
-	}
+  img {
+    width: 50%;
+  }
+  h1 {
+    font-size: 3rem;
+    display: inline-block;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3,
+  h4 {
+    font-size: 1.688rem;
+  }
+  p {
+    font-size: 1.313rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  .extra-logo-style {
+    font-size: 1.313rem;
+  }
 }
