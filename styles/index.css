@@ -17,9 +17,12 @@ html {
 	background-color: var(--page-background-color);
 	color: var(--text-color);
 }
-main, footer {
-	width: 85%;
+header, main, footer {
+	width: 70%;
 	margin: 0 auto;
+}
+section {
+	margin: 148px 0;
 }
 footer {
 	margin-bottom: 32px;
@@ -31,8 +34,11 @@ footer h4 {
 	width: fit-content;
 	margin: 0 auto;
 }
-section {
-	margin: 72px 0;
+img {
+	width: 100%;
+	float: right;
+	padding-left: 32px;
+	padding-bottom: 32px;
 }
 ul {
 	list-style: none;
@@ -90,26 +96,10 @@ li a:active {
 .live-site-text-style:before {
 	content: "the live site";
 }
-.showcase-project-container .red {
-	background-color: hsl(11, 80%, 60%);
-}
-.showcase-project-container .orange {
-	background-color: var(--text-background-color);
-}
-.showcase-project-container .green {
-	background-color: hsl(116, 80%, 60%);
-}
-.showcase-project-container {
-	border: 2px solid gray;
-	background-color: rgb(35, 38, 45);
-}
-.showcase-project-container .screen-symbol {
-	border-radius: 100%;
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-}
 @media only screen and (min-width: 950px) {
+	img {
+		width: 50%;
+	}
 	h1 {
 		font-size: 3rem;
 		display: inline-block;
