@@ -22,8 +22,14 @@ main, footer {
 	margin: 0 auto;
 }
 footer {
-	text-align: center;
 	margin-bottom: 32px;
+}
+footer h4 {
+	background-color: var(--text-background-color);
+	color: var(--secondary-text-color);
+	padding: 4px 8px;
+	width: fit-content;
+	margin: 0 auto;
 }
 section {
 	margin: 72px 0;
@@ -70,6 +76,13 @@ li a:active {
 	color: var(--secondary-text-color);
 	font-size: 1rem;
 	padding: 4px 8px;
+}
+.pages-list-style {
+	border: solid 2px var(--text-color);
+	padding-top: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: fit-content;
 }
 .github-text-style:before {
 	content: "the GitHub repository";
