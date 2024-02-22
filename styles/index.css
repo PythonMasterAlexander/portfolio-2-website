@@ -1,101 +1,140 @@
 * {
-	border: 0;
-	margin: 0;
-	padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 :root {
-	background-color: hsla(0, 0%, 15%, 1);
-	color: hsla(0, 0%, 90%, 1);
-	font-family: Roboto Mono, monospace, sans-serif;
-	font-weight: 200;
+  --page-background-color: hsla(0, 0%, 15%, 1);
+  --text-color: hsla(0, 0%, 90%, 1);
+  --secondary-text-color: hsla(215, 28%, 17%, 1);
+  --text-background-color: hsla(48, 96%, 53%, 1);
+  --link-text-underline-color: hsla(207, 86%, 57%, 1);
+  font-family:
+    Roboto Mono,
+    monospace,
+    sans-serif;
+  font-weight: 200;
+  font-size: 16px;
 }
-main, footer {
-	width: 85%;
-	margin: 0 auto;
+html {
+  background-color: var(--page-background-color);
+  color: var(--text-color);
 }
+header,
+main,
 footer {
-	text-align: center;
-	margin-bottom: 32px;
+  width: 70%;
+  margin: 0 auto;
 }
 section {
-	margin: 72px 0;
+  margin: 148px 0;
+}
+footer {
+  margin-bottom: 32px;
+}
+footer h4 {
+  background-color: var(--text-background-color);
+  color: var(--secondary-text-color);
+  padding: 4px 8px;
+  width: fit-content;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  float: right;
+  padding-left: 32px;
+  padding-bottom: 32px;
 }
 ul {
-	list-style: none;
+  list-style: none;
 }
-h1, h2 {
-	font-weight: 700;
+h1,
+h2 {
+  font-weight: 700;
 }
-h3, h4 {
-	font-weight: 500;
+h3,
+h4 {
+  font-weight: 500;
 }
 h1 {
-	margin-top: 48px;
-	margin-right: 16px;
+  margin-top: 48px;
+  margin-right: 16px;
 }
-h2, h3, ul, ul li {
-	margin-bottom: 16px;
+h2,
+h3,
+ul,
+ul li {
+  margin-bottom: 16px;
 }
 p {
-	letter-spacing: -0.85px;
-	margin-bottom: 16px;
+  letter-spacing: -0.85px;
+  margin-bottom: 16px;
 }
 li a {
-	padding-left: 8px;
-	color: hsla(0, 0%, 90%, 1);
-	font-weight: 600;
-	text-decoration-color: hsla(207, 86%, 57%, 1);
-	text-decoration-thickness: 3px;
+  padding-left: 8px;
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration-color: var(--link-text-underline-color);
+  text-decoration-thickness: 3px;
+}
+li a:hover {
+  background-color: var(--text-background-color);
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  padding: 2px;
+}
+li a:active {
+  background-color: var(--page-background-color);
+  color: var(--text-color);
 }
 .extra-logo-style {
-	background-color: hsla(48, 96%, 53%, 1);
-	color: hsla(215, 28%, 17%, 1);
-	font-size: 1rem;
-	padding: 4px 8px;
+  background-color: var(--text-background-color);
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+.pages-list-style {
+  border: solid 2px var(--text-color);
+  padding-top: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: fit-content;
 }
 .github-text-style:before {
-	content: "the GitHub repository";
+  content: "the GitHub repository";
 }
 .live-site-text-style:before {
-	content: "the live site";
+  content: "the live site";
 }
-.showcase-project-container .red {
-	background-color: hsl(11, 80%, 60%);
+.card {
+  padding: 32px;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.showcase-project-container .orange {
-	background-color: hsl(36, 80%, 60%);
-}
-.showcase-project-container .green {
-	background-color: hsl(116, 80%, 60%);
-}
-.showcase-project-container {
-	border: 2px solid gray;
-	background-color: rgb(35, 38, 45);
-}
-.showcase-project-container .screen-symbol {
-	border-radius: 100%;
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-}
-@media (min-width: 950px) {
-	h1 {
-		font-size: 3rem;
-		display: inline-block;
-	}
-	h2 {
-		font-size: 2rem;
-	}
-	h3, h4 {
-		font-size: 1.688rem;
-	}
-	p {
-		font-size: 1.313rem;
-	}
-	li {
-		font-size: 1rem;
-	}
-	.extra-logo-style {
-		font-size: 1.313rem;
-	}
+@media only screen and (min-width: 950px) {
+  img {
+    width: 50%;
+  }
+  h1 {
+    font-size: 3rem;
+    display: inline-block;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3,
+  h4 {
+    font-size: 1.688rem;
+  }
+  p {
+    font-size: 1.313rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  .extra-logo-style {
+    font-size: 1.313rem;
+  }
 }
