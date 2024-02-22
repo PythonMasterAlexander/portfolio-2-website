@@ -4,10 +4,18 @@
 	padding: 0;
 }
 :root {
-	background-color: hsla(0, 0%, 15%, 1);
-	color: hsla(0, 0%, 90%, 1);
+	--page-background-color: hsla(0, 0%, 15%, 1);
+	--text-color: hsla(0, 0%, 90%, 1);
+	--secondary-text-color: hsla(215, 28%, 17%, 1);
+	--text-background-color: hsla(48, 96%, 53%, 1);
+	--link-text-underline-color: hsla(207, 86%, 57%, 1);
 	font-family: Roboto Mono, monospace, sans-serif;
 	font-weight: 200;
+	font-size: 16px;
+}
+html {
+	background-color: var(--page-background-color);
+	color: var(--text-color);
 }
 main, footer {
 	width: 85%;
@@ -42,14 +50,24 @@ p {
 }
 li a {
 	padding-left: 8px;
-	color: hsla(0, 0%, 90%, 1);
+	color: var(--text-color);
 	font-weight: 600;
-	text-decoration-color: hsla(207, 86%, 57%, 1);
+	text-decoration-color: var(--link-text-underline-color);
 	text-decoration-thickness: 3px;
 }
+li a:hover {
+	background-color: var(--text-background-color);
+	color: var(--secondary-text-color);
+	text-decoration: none;
+	padding: 2px;
+}
+li a:active {
+	background-color: var(--page-background-color);
+	color: var(--text-color);
+}
 .extra-logo-style {
-	background-color: hsla(48, 96%, 53%, 1);
-	color: hsla(215, 28%, 17%, 1);
+	background-color: var(--text-background-color);
+	color: var(--secondary-text-color);
 	font-size: 1rem;
 	padding: 4px 8px;
 }
@@ -63,7 +81,7 @@ li a {
 	background-color: hsl(11, 80%, 60%);
 }
 .showcase-project-container .orange {
-	background-color: hsl(36, 80%, 60%);
+	background-color: var(--text-background-color);
 }
 .showcase-project-container .green {
 	background-color: hsl(116, 80%, 60%);
@@ -78,7 +96,7 @@ li a {
 	height: 15px;
 	width: 15px;
 }
-@media (min-width: 950px) {
+@media only screen and (min-width: 950px) {
 	h1 {
 		font-size: 3rem;
 		display: inline-block;
