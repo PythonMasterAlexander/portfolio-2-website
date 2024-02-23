@@ -4,15 +4,9 @@
   "description": "A simple showcase page to show three projects from the final year on front-end development on Noroff School of Technology by Alexander Hardeland",
   "main": "index.js",
   "scripts": {
-    "check-prettier": "npx prettier -c .",
-    "prettier": "npx prettier -w .",
-    "lint": "eslint ./scripts/*",
-    "lint-fix": "eslint ./scripts/* --cache --fix"
   },
   "author": "Alexander Hardeland",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "prettier": "^3.2.5"
   }
 }
